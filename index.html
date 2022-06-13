@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principios fundamentales de contéo</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://kit.fontawesome.com/ec6d4e6de2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unica+One&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <section class="section-iniciar" id="comenzar">
+        <div class="btn-start">
+            <button type="button" id="btnIniciar">Comenzar</button>
+        </div>
+    </section>
+    <section class="section-list" id="list">
+        <div class="u-list">
+            <div class="list-content">
+                <ul>
+                    <li id="btnAnalisis">Analisis</li>
+                    <li id="btnDefinir">Definir los conjuntos</li>
+                    <li id="btnDeterminar">Determinar las intersecciones</li>
+                    <li id="btnPrincipio">Principio de inclusión-exclusión</li>
+                    <input type="button" onclick="ConfirmDemo();" value="Salir de la aplicación"/>
+                </ul>
+            </div>
+            <!-- Analisis -->
+            <div class="analisis" id="content-analisis">
+                <div class="toggleCerrar" id="cerrar">
+                    <i class="fa-solid fa-x" onclick="ConfirmClose();" value="Salir de la aplicación"></i>
+                </div>
+                <h3>Ingrese 3 números enteros para comprobar que no son divisibles entre 1 y 1000</h3>
+                <div class="labels">
+                    <h5>Número: </h5>
+                    <h5>Conjunto: </h5>
+                </div>     
+                <form action="">
+                    <input type="number" id="number_one">
+                    <input type="number" id="number_two">
+                    <input type="number" id="number_three">
+                </form>
+                <form action="">
+                    <input type="text" id="letter_one">
+                    <input type="text" id="letter_two">
+                    <input type="text" id="letter_three">
+                </form>
+                <div class="div-number">
+                    <div class="number-child">
+                        <h4>Uno de cada <p class="n-one"></p> números es múltiplo de <p class="n-one-2"></p>: |<span class="letter-i"></span>|=[1000/<span class="n-one-3"></span>]=<span class="n-one-4"></span></h4>
+                    </div>
+                    <div class="number-child">
+                        <h4>Uno de cada <p class="n-two"></p> números es múltiplo de <p class="n-two-2"></p>: |<span class="letter-j"></span>|=[1000/<span class="n-two-3"></span>]=<span class="n-two-4"></span></h4>
+                    </div>
+                    <div class="number-child">
+                        <h4>Uno de cada <p class="n-three"></p> números es múltiplo de <p class="n-three-2"></p>: |<span class="letter-k"></span>|=[1000/<span class="n-three-3"></span>]=<span class="n-three-4"></span></h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Conjuntos  -->
+            <div class="analisis" id="content-conjuntos">
+                <div class="toggleCerrar" id="cerrar-1">
+                    <i class="fa-solid fa-x" onclick="ConfirmClose();" value="Salir de la aplicación"></i>
+                </div>
+                <h3>DEFINICIÓN DE LOS CONJUNTOS</h3>
+                <div class="labels">
+                    <h5>Número: </h5>
+                    <h5>Conjunto: </h5>
+                </div>     
+                <form action="">
+                    <input type="number" id="number_one">
+                    <input type="number" id="number_two">
+                    <input type="number" id="number_three">
+                </form>
+                <form action="">
+                    <input type="text" id="letter_one">
+                    <input type="text" id="letter_two">
+                    <input type="text" id="letter_three">
+                </form>
+                <div class="div-number">
+                    <div class="number-child">
+                        <h4><span class="letter-0"></span>={enteros entre 1 y 1000 divisibles para <span class="n-one-5"></span>]</h4>
+                    </div>
+                    <div class="number-child">
+                        <h4><span class="letter-1"></span>={enteros entre 1 y 1000 divisibles para <span class="n-two-5"></span>]</h4>                    
+                    </div>
+                    <div class="number-child">
+                        <h4><span class="letter-2"></span>={enteros entre 1 y 1000 divisibles para <span class="n-three-5"></span>]</h4>                    
+                    </div>
+                </div>
+            </div>
+            <!-- Interseciones -->
+            <div class="analisis" id="content-interseciones">
+                <div class="toggleCerrar" id="cerrar-2">
+                    <i class="fa-solid fa-x" onclick="ConfirmClose();" value="Salir de la aplicación"></i>
+                </div>
+                <h3>Ingrese 3 números enteros para comprobar que no son divisibles entre 1 y 1000</h3>
+                <div class="labels">
+                    <h5>Número: </h5>
+                    <h5>Intersección: </h5>
+                    <h5>Conjunto 1: </h5>
+                    <h5>Conjunto 2: </h5>
+                </div>     
+                <form action="">
+                    <input type="number" id="number_one_">
+                    <input type="number" id="number_two">
+                    <input type="number" id="number_three">
+                </form>
+                <form action="">
+                    <input type="number" id="number_one_inter">
+                    <input type="number" id="number_two_inter">
+                    <input type="number" id="number_three_inter">
+                </form>
+                <form action="">
+                    <input type="text" id="letter_one">
+                    <input type="text" id="letter_two">
+                    <input type="text" id="letter_three">
+                </form>
+                <form action="">
+                    <input type="text" id="letter_one">
+                    <input type="text" id="letter_two">
+                    <input type="text" id="letter_three">
+                </form>
+                <div class="div-number">
+                    <div class="number-child">
+                        <h4>Uno de cada <p class="n-one"></p> números es múltiplo de <p class="n-one-2"></p>: |<span class="letter-i"></span>|=[1000/<span class="n-one-3"></span>]=<span class="n-one-4"></span></h4>
+                    </div>
+                    <div class="number-child">
+                        <h4>Uno de cada <p class="n-two"></p> números es múltiplo de <p class="n-two-2"></p>: |<span class="letter-j"></span>|=[1000/<span class="n-two-3"></span>]=<span class="n-two-4"></span></h4>
+                    </div>
+                    <div class="number-child">
+                        <h4>Uno de cada <p class="n-three"></p> números es múltiplo de <p class="n-three-2"></p>: |<span class="letter-k"></span>|=[1000/<span class="n-three-3"></span>]=<span class="n-three-4"></span></h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Principio de inclusión-exclusión -->
+            <div class="analisis" id="content-principio">
+                <div class="toggleCerrar" id="cerrar-3">
+                    <i class="fa-solid fa-x" onclick="ConfirmClose();" value="Salir de la aplicación"></i>
+                </div>
+                <h3>Ingrese 3 números enteros para comprobar que no son divisibles entre 1 y 1000</h3>
+                <div class="labels">
+                    <h5>Número: </h5>
+                    <h5>Conjunto: </h5>
+                </div>     
+                <form action="">
+                    <input type="number" id="number_one">
+                    <input type="number" id="number_two">
+                    <input type="number" id="number_three">
+                </form>
+                <form action="">
+                    <input type="text" id="letter_one">
+                    <input type="text" id="letter_two">
+                    <input type="text" id="letter_three">
+                </form>
+                <div class="div-number">
+                    <div class="number-child">
+                        <h4>Uno de cada <p class="n-one"></p> números es múltiplo de <p class="n-one-2"></p>: |<span class="letter-i"></span>|=[1000/<span class="n-one-3"></span>]=<span class="n-one-4"></span></h4>
+                    </div>
+                    <div class="number-child">
+                        <h4>Uno de cada <p class="n-two"></p> números es múltiplo de <p class="n-two-2"></p>: |<span class="letter-j"></span>|=[1000/<span class="n-two-3"></span>]=<span class="n-two-4"></span></h4>
+                    </div>
+                    <div class="number-child">
+                        <h4>Uno de cada <p class="n-three"></p> números es múltiplo de <p class="n-three-2"></p>: |<span class="letter-k"></span>|=[1000/<span class="n-three-3"></span>]=<span class="n-three-4"></span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+</html>
