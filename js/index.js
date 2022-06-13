@@ -15,7 +15,20 @@ let btnCerrar = document.getElementById("cerrar");
 let btnCerrar_1 = document.getElementById("cerrar-1");
 let btnCerrar_2 = document.getElementById("cerrar-2");
 let btnCerrar_3 = document.getElementById("cerrar-3");
-//Lógica inclusión-exclusión
+//variables intersecciones 
+let number_1 = document.getElementById("number_intersection_1");
+let number_2 = document.getElementById("number_intersection_2");
+let number_3 = document.getElementById("number_intersection_3");
+let number_4 = document.getElementById("number_intersection_4");
+let number_5 = document.getElementById("number_intersection_5");
+let number_6 = document.getElementById("number_intersection_6");
+let letter_1 = document.getElementById("letter_1");
+let letter_2 = document.getElementById("letter_2");
+let letter_3 = document.getElementById("letter_3");
+let letter_4 = document.getElementById("letter_4");
+let letter_5 = document.getElementById("letter_5");
+let letter_6 = document.getElementById("letter_6");
+/*-------------------------------Lógica inclusión-exclusión---------------------------------------------*/
 //conjunto 1
 let number_one = document.getElementById("number_one");
 let letter_one = document.getElementById("letter_one");
@@ -74,7 +87,6 @@ letter_three.addEventListener('keyup',(event) =>{
     document.querySelector('.letter-2').innerHTML = inputLetter.toUpperCase();
 });
 
-/*--------------------------------------------------------------------------------------------------*/
 
 btnIniciar.addEventListener("click", () => {
     sectionIniciar.classList.toggle("active");
@@ -125,3 +137,80 @@ function ConfirmClose() {
     alert("¡Haz denegado el mensaje!");
     }
 }
+/*------------------------------Interseciones------------------------------------*/
+let inputNumber_1;
+let inputNumber_2;
+number_1.addEventListener ('keyup',(event) =>{
+    inputNumber_1 = event.path[0].value;
+    document.querySelector('.n-1').innerHTML = inputNumber_1;
+});
+number_4.addEventListener ('keyup',(event) =>{
+    inputNumber_2 = event.path[0].value;
+    document.querySelector('.n-2').innerHTML = inputNumber_2;
+    r = inputNumber_1 * inputNumber_2;
+    document.querySelector('.n-3').innerHTML = r;
+    document.querySelector('.n-4').innerHTML = r;
+    r_2 = 1000/r;
+    document.querySelector('.r-2').innerHTML = r_2.toFixed();
+});
+number_2.addEventListener ('keyup',(event) =>{
+    inputNumber_1 = event.path[0].value;
+    document.querySelector('.n-5').innerHTML = inputNumber_1;
+});
+number_5.addEventListener ('keyup',(event) =>{
+    inputNumber_2 = event.path[0].value;
+    document.querySelector('.n-6').innerHTML = inputNumber_2;
+    r = inputNumber_1 * inputNumber_2;
+    document.querySelector('.n-7').innerHTML = r;
+    document.querySelector('.n-8').innerHTML = r;
+    r_2 = 1000/r;
+    document.querySelector('.r-3').innerHTML = r_2.toFixed();
+});
+number_3.addEventListener ('keyup',(event) =>{
+    inputNumber_1 = event.path[0].value;
+    document.querySelector('.n-9').innerHTML = inputNumber_1;
+});
+number_6.addEventListener ('keyup',(event) =>{
+    inputNumber_2 = event.path[0].value;
+    document.querySelector('.n-1-0').innerHTML = inputNumber_2;
+    r = inputNumber_1 * inputNumber_2;
+    document.querySelector('.n-1-1').innerHTML = r;
+    document.querySelector('.n-1-2').innerHTML = r;
+    r_2 = 1000/r;
+    document.querySelector('.r-4').innerHTML = r_2.toFixed();
+});
+let inputLetter_1;
+let inputLetter_2;
+letter_1.addEventListener('keyup',(event) =>{
+    inputLetter_1 = event.path[0].value;
+    document.querySelector('.l-1').innerHTML = inputLetter_1.toUpperCase();
+    document.querySelector('.l-3').innerHTML = inputLetter_1.toUpperCase();
+});
+letter_4.addEventListener('keyup',(event) =>{
+    inputLetter_2 = event.path[0].value;
+    document.querySelector('.l-2').innerHTML = inputLetter_2.toUpperCase();
+    document.querySelector('.l-4').innerHTML = inputLetter_2.toUpperCase();
+});
+letter_2.addEventListener('keyup',(event) =>{
+    inputLetter_1 = event.path[0].value;
+    document.querySelector('.l-5').innerHTML = inputLetter_1.toUpperCase();
+    document.querySelector('.l-7').innerHTML = inputLetter_1.toUpperCase();
+});
+letter_5.addEventListener('keyup',(event) =>{
+    inputLetter_2 = event.path[0].value;
+    document.querySelector('.l-6').innerHTML = inputLetter_2.toUpperCase();
+    document.querySelector('.l-8').innerHTML = inputLetter_2.toUpperCase();
+});
+letter_3.addEventListener('keyup',(event) =>{
+    inputLetter_1 = event.path[0].value;
+    document.querySelector('.l-9').innerHTML = inputLetter_1.toUpperCase();
+    document.querySelector('.l-1-1').innerHTML = inputLetter_1.toUpperCase();
+});
+letter_6.addEventListener('keyup',(event) =>{
+    inputLetter_2 = event.path[0].value;
+    document.querySelector('.l-1-0').innerHTML = inputLetter_2.toUpperCase();
+    document.querySelector('.l-1-2').innerHTML = inputLetter_2.toUpperCase();
+});
+
+
+/*--------------------------------------------------------------------------------------------------*/

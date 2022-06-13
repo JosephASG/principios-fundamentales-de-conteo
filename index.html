@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unica+One&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <section class="section-iniciar" id="comenzar">
         <div class="btn-start">
@@ -27,7 +29,7 @@
                     <li id="btnDefinir">Definir los conjuntos</li>
                     <li id="btnDeterminar">Determinar las intersecciones</li>
                     <li id="btnPrincipio">Principio de inclusión-exclusión</li>
-                    <input type="button" onclick="ConfirmDemo();" value="Salir de la aplicación"/>
+                    <input type="button" onclick="ConfirmDemo();" value="Salir de la aplicación" />
                 </ul>
             </div>
             <!-- Analisis -->
@@ -39,7 +41,7 @@
                 <div class="labels">
                     <h5>Número: </h5>
                     <h5>Conjunto: </h5>
-                </div>     
+                </div>
                 <form action="">
                     <input type="number" id="number_one">
                     <input type="number" id="number_two">
@@ -52,13 +54,19 @@
                 </form>
                 <div class="div-number">
                     <div class="number-child">
-                        <h4>Uno de cada <p class="n-one"></p> números es múltiplo de <p class="n-one-2"></p>: |<span class="letter-i"></span>|=[1000/<span class="n-one-3"></span>]=<span class="n-one-4"></span></h4>
+                        <h4>Uno de cada <p class="n-one"></p> números es múltiplo de <p class="n-one-2"></p>: |<span
+                                class="letter-i"></span>|=[1000/<span class="n-one-3"></span>]=<span
+                                class="n-one-4"></span></h4>
                     </div>
                     <div class="number-child">
-                        <h4>Uno de cada <p class="n-two"></p> números es múltiplo de <p class="n-two-2"></p>: |<span class="letter-j"></span>|=[1000/<span class="n-two-3"></span>]=<span class="n-two-4"></span></h4>
+                        <h4>Uno de cada <p class="n-two"></p> números es múltiplo de <p class="n-two-2"></p>: |<span
+                                class="letter-j"></span>|=[1000/<span class="n-two-3"></span>]=<span
+                                class="n-two-4"></span></h4>
                     </div>
                     <div class="number-child">
-                        <h4>Uno de cada <p class="n-three"></p> números es múltiplo de <p class="n-three-2"></p>: |<span class="letter-k"></span>|=[1000/<span class="n-three-3"></span>]=<span class="n-three-4"></span></h4>
+                        <h4>Uno de cada <p class="n-three"></p> números es múltiplo de <p class="n-three-2"></p>: |<span
+                                class="letter-k"></span>|=[1000/<span class="n-three-3"></span>]=<span
+                                class="n-three-4"></span></h4>
                     </div>
                 </div>
             </div>
@@ -68,29 +76,19 @@
                     <i class="fa-solid fa-x" onclick="ConfirmClose();" value="Salir de la aplicación"></i>
                 </div>
                 <h3>DEFINICIÓN DE LOS CONJUNTOS</h3>
-                <div class="labels">
-                    <h5>Número: </h5>
-                    <h5>Conjunto: </h5>
-                </div>     
-                <form action="">
-                    <input type="number" id="number_one">
-                    <input type="number" id="number_two">
-                    <input type="number" id="number_three">
-                </form>
-                <form action="">
-                    <input type="text" id="letter_one">
-                    <input type="text" id="letter_two">
-                    <input type="text" id="letter_three">
-                </form>
+
                 <div class="div-number">
                     <div class="number-child">
-                        <h4><span class="letter-0"></span>={enteros entre 1 y 1000 divisibles para <span class="n-one-5"></span>]</h4>
+                        <h4><span class="letter-0"></span>={enteros entre 1 y 1000 divisibles para <span
+                                class="n-one-5"></span>]</h4>
                     </div>
                     <div class="number-child">
-                        <h4><span class="letter-1"></span>={enteros entre 1 y 1000 divisibles para <span class="n-two-5"></span>]</h4>                    
+                        <h4><span class="letter-1"></span>={enteros entre 1 y 1000 divisibles para <span
+                                class="n-two-5"></span>]</h4>
                     </div>
                     <div class="number-child">
-                        <h4><span class="letter-2"></span>={enteros entre 1 y 1000 divisibles para <span class="n-three-5"></span>]</h4>                    
+                        <h4><span class="letter-2"></span>={enteros entre 1 y 1000 divisibles para <span
+                                class="n-three-5"></span>]</h4>
                     </div>
                 </div>
             </div>
@@ -105,36 +103,54 @@
                     <h5>Intersección: </h5>
                     <h5>Conjunto 1: </h5>
                     <h5>Conjunto 2: </h5>
-                </div>     
+                </div>
                 <form action="">
-                    <input type="number" id="number_one_">
-                    <input type="number" id="number_two">
-                    <input type="number" id="number_three">
+                    <input type="number" id="number_intersection_1">
+                    <input type="number" id="number_intersection_2">
+                    <input type="number" id="number_intersection_3">
                 </form>
                 <form action="">
-                    <input type="number" id="number_one_inter">
-                    <input type="number" id="number_two_inter">
-                    <input type="number" id="number_three_inter">
+                    <input type="number" id="number_intersection_4">
+                    <input type="number" id="number_intersection_5">
+                    <input type="number" id="number_intersection_6">
                 </form>
                 <form action="">
-                    <input type="text" id="letter_one">
-                    <input type="text" id="letter_two">
-                    <input type="text" id="letter_three">
+                    <input type="text" id="letter_1">
+                    <input type="text" id="letter_2">
+                    <input type="text" id="letter_3">
                 </form>
                 <form action="">
-                    <input type="text" id="letter_one">
-                    <input type="text" id="letter_two">
-                    <input type="text" id="letter_three">
+                    <input type="text" id="letter_4">
+                    <input type="text" id="letter_5">
+                    <input type="text" id="letter_6">
                 </form>
                 <div class="div-number">
                     <div class="number-child">
-                        <h4>Uno de cada <p class="n-one"></p> números es múltiplo de <p class="n-one-2"></p>: |<span class="letter-i"></span>|=[1000/<span class="n-one-3"></span>]=<span class="n-one-4"></span></h4>
+                        <p>
+                        <h4>Si, x∈ |<span class="l-1"></span> ∩ <span class="l-2"></span>| <br> entonces x es múltiplo
+                            de
+                            (<span class="n-1"></span> * <span class="n-2"></span>) = <span class="n-3"></span>, <br>
+                            por tanto: |<span class="l-3"></span> ∩ <span
+                                class="l-4"></span>|=|1000/<span class="n-4"></span>|=<span class="r-2"></span></h4>
+                        </p>
                     </div>
                     <div class="number-child">
-                        <h4>Uno de cada <p class="n-two"></p> números es múltiplo de <p class="n-two-2"></p>: |<span class="letter-j"></span>|=[1000/<span class="n-two-3"></span>]=<span class="n-two-4"></span></h4>
+                        <p>
+                        <h4>Si, x∈ |<span class="l-5"></span> ∩ <span class="l-6"></span>| <br> entonces x es múltiplo
+                            de
+                            (<span class="n-5"></span> * <span class="n-6"></span>) = <span class="n-7"></span>, <br>
+                            por tanto: |<span class="l-7"></span> ∩ <span
+                                class="l-8"></span>|=|1000/<span class="n-8"></span>|=<span class="r-3"></span></h4>
+                        </p>
                     </div>
                     <div class="number-child">
-                        <h4>Uno de cada <p class="n-three"></p> números es múltiplo de <p class="n-three-2"></p>: |<span class="letter-k"></span>|=[1000/<span class="n-three-3"></span>]=<span class="n-three-4"></span></h4>
+                        <p>
+                        <h4>Si, x∈ |<span class="l-9"></span> ∩ <span class="l-1-0"></span>| <br> entonces x es múltiplo
+                            de
+                            (<span class="n-9"></span> * <span class="n-1-0"></span>) = <span class="n-1-1"></span>, <br>
+                            por tanto: |<span class="l-1-1"></span> ∩ <span
+                                class="l-1-2"></span>|=|1000/<span class="n-1-2"></span>|=<span class="r-4"></span></h4>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -147,7 +163,7 @@
                 <div class="labels">
                     <h5>Número: </h5>
                     <h5>Conjunto: </h5>
-                </div>     
+                </div>
                 <form action="">
                     <input type="number" id="number_one">
                     <input type="number" id="number_two">
@@ -160,13 +176,19 @@
                 </form>
                 <div class="div-number">
                     <div class="number-child">
-                        <h4>Uno de cada <p class="n-one"></p> números es múltiplo de <p class="n-one-2"></p>: |<span class="letter-i"></span>|=[1000/<span class="n-one-3"></span>]=<span class="n-one-4"></span></h4>
+                        <h4>Uno de cada <p class="n-one"></p> números es múltiplo de <p class="n-one-2"></p>: |<span
+                                class="letter-i"></span>|=[1000/<span class="n-one-3"></span>]=<span
+                                class="n-one-4"></span></h4>
                     </div>
                     <div class="number-child">
-                        <h4>Uno de cada <p class="n-two"></p> números es múltiplo de <p class="n-two-2"></p>: |<span class="letter-j"></span>|=[1000/<span class="n-two-3"></span>]=<span class="n-two-4"></span></h4>
+                        <h4>Uno de cada <p class="n-two"></p> números es múltiplo de <p class="n-two-2"></p>: |<span
+                                class="letter-j"></span>|=[1000/<span class="n-two-3"></span>]=<span
+                                class="n-two-4"></span></h4>
                     </div>
                     <div class="number-child">
-                        <h4>Uno de cada <p class="n-three"></p> números es múltiplo de <p class="n-three-2"></p>: |<span class="letter-k"></span>|=[1000/<span class="n-three-3"></span>]=<span class="n-three-4"></span></h4>
+                        <h4>Uno de cada <p class="n-three"></p> números es múltiplo de <p class="n-three-2"></p>: |<span
+                                class="letter-k"></span>|=[1000/<span class="n-three-3"></span>]=<span
+                                class="n-three-4"></span></h4>
                     </div>
                 </div>
             </div>
@@ -174,4 +196,5 @@
     </section>
     <script src="js/index.js"></script>
 </body>
+
 </html>

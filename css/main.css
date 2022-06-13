@@ -154,7 +154,7 @@ html, body{
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 15px 0 10px 0;
+    margin: 20px 0 10px 0;
 }
 .analisis form input[type="number"]{
     flex-wrap: wrap;
@@ -180,21 +180,24 @@ html, body{
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 30px;
+    letter-spacing: 1px;
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 18px;
 }
-.div-number .number-child h4:nth-child(1){
+
+.div-number .number-child p h4:nth-child(1){
     position: relative;
     width: 100%;
     flex-wrap: wrap;
     text-align: center;
-    letter-spacing: 2px;
-    font-family: 'Josefin Sans',sans-serif;
+    flex: 1 1 150px;
 }
-.div-number .number-child h4:nth-child(2){
+.div-number .number-child  p h4:nth-child(2){
     position: relative;
     width: 100%;
     flex-wrap: wrap;
 }
-.div-number .number-child h4:nth-child(3){
+.div-number .number-child p h4:nth-child(3){
     position: relative;
     width: 100%;
     flex-wrap: wrap;
