@@ -39,15 +39,16 @@ let letter_two = document.getElementById("letter_two");
 let number_three = document.getElementById("number_three");
 let letter_three = document.getElementById("letter_three");
 // Conjunto A
+let result_1;
 number_one.addEventListener ('keyup',(event) =>{
-    let result;
     let inputNumber = event.path[0].value;
     document.querySelector('.n-one').innerHTML = inputNumber;
     document.querySelector('.n-one-2').innerHTML = inputNumber;
     document.querySelector('.n-one-3').innerHTML = inputNumber;
-    result = 1000/inputNumber;
-    document.querySelector('.n-one-4').innerHTML = result.toFixed();
+    result_1 = 1000/inputNumber;
+    document.querySelector('.n-one-4').innerHTML = result_1.toFixed();
     document.querySelector('.n-one-5').innerHTML = inputNumber;
+    document.querySelector('.l-1-3-7').innerHTML = result_1.toFixed();;
 });
 letter_one.addEventListener('keyup',(event) =>{
     let inputLetter = event.path[0].value;
@@ -55,15 +56,16 @@ letter_one.addEventListener('keyup',(event) =>{
     document.querySelector('.letter-0').innerHTML = inputLetter.toUpperCase();
 });
 // Conjunto B
+let result_2;
 number_two.addEventListener ('keyup',(event) =>{
-    let result;
     let inputNumber = event.path[0].value;
     document.querySelector('.n-two').innerHTML = inputNumber;
     document.querySelector('.n-two-2').innerHTML = inputNumber;
     document.querySelector('.n-two-3').innerHTML = inputNumber;
-    result = 1000/inputNumber;
-    document.querySelector('.n-two-4').innerHTML = result.toFixed();
+    result_2 = 1000/inputNumber;
+    document.querySelector('.n-two-4').innerHTML = result_2.toFixed();
     document.querySelector('.n-two-5').innerHTML = inputNumber;
+    document.querySelector('.l-1-3-8').innerHTML = result_2.toFixed();
 });
 letter_two.addEventListener('keyup',(event) =>{
     let inputLetter = event.path[0].value;
@@ -71,15 +73,16 @@ letter_two.addEventListener('keyup',(event) =>{
     document.querySelector('.letter-1').innerHTML = inputLetter.toUpperCase();
 });
 // Conjunto C
+let result_3;
 number_three.addEventListener ('keyup',(event) =>{
-    let result;
     let inputNumber = event.path[0].value;
     document.querySelector('.n-three').innerHTML = inputNumber;
     document.querySelector('.n-three-2').innerHTML = inputNumber;
     document.querySelector('.n-three-3').innerHTML = inputNumber;
-    result = 1000/inputNumber;
-    document.querySelector('.n-three-4').innerHTML = result.toFixed();
+    result_3 = 1000/inputNumber;
+    document.querySelector('.n-three-4').innerHTML = result_3.toFixed();
     document.querySelector('.n-three-5').innerHTML = inputNumber;
+    document.querySelector('.l-1-3-9').innerHTML = result_3.toFixed();
 });
 letter_three.addEventListener('keyup',(event) =>{
     let inputLetter = event.path[0].value;
@@ -149,27 +152,31 @@ number_1.addEventListener ('keyup',(event) =>{
     document.querySelector('.n-1').innerHTML = inputNumber_1;
     document.querySelector('.n-1-3').innerHTML = inputNumber_3;
 });
+let r_1;
 number_4.addEventListener ('keyup',(event) =>{
     inputNumber_2 = event.path[0].value;
     document.querySelector('.n-2').innerHTML = inputNumber_2;
     r = inputNumber_1 * inputNumber_2;
     document.querySelector('.n-3').innerHTML = r;
     document.querySelector('.n-4').innerHTML = r;
-    r_2 = 1000/r;
-    document.querySelector('.r-2').innerHTML = r_2.toFixed();
+    r_1 = 1000/r;
+    document.querySelector('.r-2').innerHTML = r_1.toFixed();
+    document.querySelector('.l-1-4-0').innerHTML = r_1.toFixed();
 });
 number_2.addEventListener ('keyup',(event) =>{
     inputNumber_1 = event.path[0].value;
     document.querySelector('.n-5').innerHTML = inputNumber_1;
 });
+let r_3;
 number_5.addEventListener ('keyup',(event) =>{
     inputNumber_2 = event.path[0].value;
     document.querySelector('.n-6').innerHTML = inputNumber_2;
     r = inputNumber_1 * inputNumber_2;
     document.querySelector('.n-7').innerHTML = r;
     document.querySelector('.n-8').innerHTML = r;
-    r_2 = 1000/r;
-    document.querySelector('.r-3').innerHTML = r_2.toFixed();
+    r_3 = 1000/r;
+    document.querySelector('.r-3').innerHTML = r_3.toFixed();
+    document.querySelector('.l-1-4-1').innerHTML = r_3.toFixed();
 });
 number_3.addEventListener ('keyup',(event) =>{
     inputNumber_1 = event.path[0].value;
@@ -177,6 +184,8 @@ number_3.addEventListener ('keyup',(event) =>{
     document.querySelector('.n-9').innerHTML = inputNumber_1;
     document.querySelector('.n-1-4').innerHTML = inputNumber_4;
 });
+let r_4;
+let r_5;
 number_6.addEventListener ('keyup',(event) =>{
     inputNumber_2 = event.path[0].value;
     inputNumber_5 = event.path[0].value;
@@ -185,13 +194,17 @@ number_6.addEventListener ('keyup',(event) =>{
     r = inputNumber_1 * inputNumber_2;
     document.querySelector('.n-1-1').innerHTML = r;
     document.querySelector('.n-1-2').innerHTML = r;
-    r_2 = 1000/r;
+    r_4 = 1000/r;
     r_special = inputNumber_3 * inputNumber_4 * inputNumber_5;
     document.querySelector('.n-1-6').innerHTML = r_special.toFixed();
-    document.querySelector('.r-4').innerHTML = r_2.toFixed();
+    document.querySelector('.r-4').innerHTML = r_4.toFixed();
+    document.querySelector('.l-1-4-2').innerHTML = r_4.toFixed();
     r_5 = 1000/r_special;
     document.querySelector('.n-1-7').innerHTML = r_special.toFixed();
+    document.querySelector('.l-1-4-3').innerHTML = r_5.toFixed();
     document.querySelector('.r-5').innerHTML = r_5.toFixed();
+    r_total = result_1 + result_2 + result_3 - r_1 - r_3 - r_4 + r_5;
+    document.querySelector('.l-1-4-4').innerHTML = r_total.toFixed();
 });
 let inputLetter_1;
 let inputLetter_2;
@@ -206,6 +219,7 @@ letter_1.addEventListener('keyup',(event) =>{
     document.querySelector('.l-1-2-5').innerHTML = inputLetter_1.toUpperCase();
     document.querySelector('.l-1-2-7').innerHTML = inputLetter_1.toUpperCase();
     document.querySelector('.l-1-3-1').innerHTML = inputLetter_1.toUpperCase();
+    document.querySelector('.l-1-3-4').innerHTML = inputLetter_1.toUpperCase();
 });
 letter_4.addEventListener('keyup',(event) =>{
     inputLetter_2 = event.path[0].value;
@@ -233,6 +247,7 @@ letter_3.addEventListener('keyup',(event) =>{
     document.querySelector('.l-1-2-6').innerHTML = inputLetter_1.toUpperCase();
     document.querySelector('.l-1-2-9').innerHTML = inputLetter_1.toUpperCase();
     document.querySelector('.l-1-3-2').innerHTML = inputLetter_1.toUpperCase();
+    document.querySelector('.l-1-3-5').innerHTML = inputLetter_1.toUpperCase();
 });
 letter_6.addEventListener('keyup',(event) =>{
     inputLetter_2 = event.path[0].value;
@@ -245,6 +260,7 @@ letter_6.addEventListener('keyup',(event) =>{
     document.querySelector('.l-1-2-8').innerHTML = inputLetter_2.toUpperCase();
     document.querySelector('.l-1-3-0').innerHTML = inputLetter_2.toUpperCase();
     document.querySelector('.l-1-3-3').innerHTML = inputLetter_2.toUpperCase();
+    document.querySelector('.l-1-3-6').innerHTML = inputLetter_2.toUpperCase();
 });
 
 
