@@ -140,9 +140,14 @@ function ConfirmClose() {
 /*------------------------------Interseciones------------------------------------*/
 let inputNumber_1;
 let inputNumber_2;
+let inputNumber_3;
+let inputNumber_4;
+let inputNumber_5;
 number_1.addEventListener ('keyup',(event) =>{
     inputNumber_1 = event.path[0].value;
+    inputNumber_3 = event.path[0].value;
     document.querySelector('.n-1').innerHTML = inputNumber_1;
+    document.querySelector('.n-1-3').innerHTML = inputNumber_3;
 });
 number_4.addEventListener ('keyup',(event) =>{
     inputNumber_2 = event.path[0].value;
@@ -168,16 +173,25 @@ number_5.addEventListener ('keyup',(event) =>{
 });
 number_3.addEventListener ('keyup',(event) =>{
     inputNumber_1 = event.path[0].value;
+    inputNumber_4 = event.path[0].value;
     document.querySelector('.n-9').innerHTML = inputNumber_1;
+    document.querySelector('.n-1-4').innerHTML = inputNumber_4;
 });
 number_6.addEventListener ('keyup',(event) =>{
     inputNumber_2 = event.path[0].value;
+    inputNumber_5 = event.path[0].value;
     document.querySelector('.n-1-0').innerHTML = inputNumber_2;
+    document.querySelector('.n-1-5').innerHTML = inputNumber_5;
     r = inputNumber_1 * inputNumber_2;
     document.querySelector('.n-1-1').innerHTML = r;
     document.querySelector('.n-1-2').innerHTML = r;
     r_2 = 1000/r;
+    r_special = inputNumber_3 * inputNumber_4 * inputNumber_5;
+    document.querySelector('.n-1-6').innerHTML = r_special.toFixed();
     document.querySelector('.r-4').innerHTML = r_2.toFixed();
+    r_5 = 1000/r_special;
+    document.querySelector('.n-1-7').innerHTML = r_special.toFixed();
+    document.querySelector('.r-5').innerHTML = r_5.toFixed();
 });
 let inputLetter_1;
 let inputLetter_2;
@@ -185,6 +199,13 @@ letter_1.addEventListener('keyup',(event) =>{
     inputLetter_1 = event.path[0].value;
     document.querySelector('.l-1').innerHTML = inputLetter_1.toUpperCase();
     document.querySelector('.l-3').innerHTML = inputLetter_1.toUpperCase();
+    document.querySelector('.l-1-3').innerHTML = inputLetter_1.toUpperCase();
+    document.querySelector('.l-1-6').innerHTML = inputLetter_1.toUpperCase();
+    document.querySelector('.l-1-9').innerHTML = inputLetter_1.toUpperCase();
+    document.querySelector('.l-1-2-2').innerHTML = inputLetter_1.toUpperCase();
+    document.querySelector('.l-1-2-5').innerHTML = inputLetter_1.toUpperCase();
+    document.querySelector('.l-1-2-7').innerHTML = inputLetter_1.toUpperCase();
+    document.querySelector('.l-1-3-1').innerHTML = inputLetter_1.toUpperCase();
 });
 letter_4.addEventListener('keyup',(event) =>{
     inputLetter_2 = event.path[0].value;
@@ -205,12 +226,29 @@ letter_3.addEventListener('keyup',(event) =>{
     inputLetter_1 = event.path[0].value;
     document.querySelector('.l-9').innerHTML = inputLetter_1.toUpperCase();
     document.querySelector('.l-1-1').innerHTML = inputLetter_1.toUpperCase();
+    document.querySelector('.l-1-4').innerHTML = inputLetter_1.toUpperCase();
+    document.querySelector('.l-1-7').innerHTML = inputLetter_1.toUpperCase();
+    document.querySelector('.l-1-2-0').innerHTML = inputLetter_1.toUpperCase();
+    document.querySelector('.l-1-2-3').innerHTML = inputLetter_1.toUpperCase();
+    document.querySelector('.l-1-2-6').innerHTML = inputLetter_1.toUpperCase();
+    document.querySelector('.l-1-2-9').innerHTML = inputLetter_1.toUpperCase();
+    document.querySelector('.l-1-3-2').innerHTML = inputLetter_1.toUpperCase();
 });
 letter_6.addEventListener('keyup',(event) =>{
     inputLetter_2 = event.path[0].value;
     document.querySelector('.l-1-0').innerHTML = inputLetter_2.toUpperCase();
     document.querySelector('.l-1-2').innerHTML = inputLetter_2.toUpperCase();
+    document.querySelector('.l-1-5').innerHTML = inputLetter_2.toUpperCase();
+    document.querySelector('.l-1-8').innerHTML = inputLetter_2.toUpperCase();
+    document.querySelector('.l-1-2-1').innerHTML = inputLetter_2.toUpperCase();
+    document.querySelector('.l-1-2-4').innerHTML = inputLetter_2.toUpperCase();
+    document.querySelector('.l-1-2-8').innerHTML = inputLetter_2.toUpperCase();
+    document.querySelector('.l-1-3-0').innerHTML = inputLetter_2.toUpperCase();
+    document.querySelector('.l-1-3-3').innerHTML = inputLetter_2.toUpperCase();
 });
 
 
-/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------Principio de Inclusión-Exclusión------------------------------------------------------*/
+
+
+
